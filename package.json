@@ -24,9 +24,11 @@
     "@types/node": "^18.15.11",
     "nodemon": "^2.0.22",
     "ts-node": "^10.9.1",
-    "typescript": "^5.1.0-dev.20230403"
+    "typescript": "^5.1.0-dev.20230403",
+    "@types/body-parser": "^1.19.2"
   },
   "dependencies": {
+    "body-parser": "^1.20.1",
     "express": "^4.18.2"
   }
 }

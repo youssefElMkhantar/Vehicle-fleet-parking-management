@@ -1,0 +1,34 @@
+// greeting message
+GET http://localhost:5002
+
+###
+
+// regiter successfully a vehicle in the fleet
+POST http://localhost:5002/register 
+Content-Type: application/json
+
+{
+    "fleetId": 1,
+    "vehicle":{"name": "peugeot", "id": 3}
+}
+
+###
+
+// vehicle already registred in the specified fleet
+POST http://localhost:5002/register 
+Content-Type: application/json
+
+{
+    "fleetId": 1,
+    "vehicle":{"name": "mercedes", "id": 1}
+}
+
+###
+
+// unvalid request data
+POST http://localhost:5002/register 
+Content-Type: application/json
+
+{
+    "vehicle":{"name": "peugeot", "id": 3}
+}
