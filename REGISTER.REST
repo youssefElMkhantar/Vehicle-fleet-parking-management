@@ -1,6 +1,10 @@
 // greeting message
-GET http://localhost:5002
+POST http://localhost:5002
+Content-Type: application/json
 
+{
+    "n": 16
+}
 ###
 
 // regiter successfully a vehicle in the fleet
